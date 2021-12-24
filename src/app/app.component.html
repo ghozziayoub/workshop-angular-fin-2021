@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>Hello World !</h1>
+  <p>Welcome to this {{title}}</p>
+  <!-- Interpolation {{ attribut }} -->
+  <hr>
+
+  <!-- Directives -->
+  <div *ngIf="users.length == 0" class="alert bg-warning">mafamma hatta user , c bon tfas5ou lkol !</div>
+
+  <ul>
+    <li class="mb-2" *ngFor="let user of users">{{user}} -
+      <button (click)="delete(user)" class="btn btn-sm btn-danger">Delete</button>
+    </li>
+  </ul>
+</div>
